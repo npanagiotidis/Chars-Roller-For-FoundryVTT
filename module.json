@@ -1,0 +1,25 @@
+{
+  "id": "chars-roller",
+  "title": "Chars Roller for FoundryVTT",
+  "description": "Allows player characters to roll 4d6 drop-lowest twice for each ability score (STR, DEX, CON, WIS, INT, CHA), choose one of the two sets, and receive class suggestions based on their highest attribute. Each character can only perform this roll once. Designed for the ARS system with OSRIC compendium.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "npanagiotidis",
+      "url": "https://github.com/npanagiotidis"
+    }
+  ],
+  "esmodules": ["scripts/chars-roller.js"],
+  "styles": ["styles/chars-roller.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}

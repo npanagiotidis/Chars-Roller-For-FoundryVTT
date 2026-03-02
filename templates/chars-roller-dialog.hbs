@@ -1,0 +1,70 @@
+{{!-- chars-roller-dialog.hbs --}}
+<div class="chars-roller-dialog">
+  <p class="chars-roller-instructions">{{instructions}}</p>
+
+  <div class="chars-roller-sets">
+
+    {{!-- ── Set 1 ── --}}
+    <div class="chars-roller-set" data-set="1">
+      <h3>{{set1Label}}</h3>
+      <table class="chars-roller-table">
+        <thead>
+          <tr>
+            <th>{{abilityLabel}}</th>
+            <th>{{scoreLabel}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each set1}}
+          <tr>
+            <td>{{label}}</td>
+            <td class="chars-roller-score">{{value}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+        <tfoot>
+          <tr class="chars-roller-total-row">
+            <td><strong>{{totalLabel}}</strong></td>
+            <td class="chars-roller-score"><strong>{{total1}}</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="chars-roller-suggestion">
+        <i class="fas fa-hat-wizard"></i>
+        <em>{{suggestion1Text}}</em>
+      </div>
+    </div>
+
+    {{!-- ── Set 2 ── --}}
+    <div class="chars-roller-set" data-set="2">
+      <h3>{{set2Label}}</h3>
+      <table class="chars-roller-table">
+        <thead>
+          <tr>
+            <th>{{abilityLabel}}</th>
+            <th>{{scoreLabel}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each set2}}
+          <tr>
+            <td>{{label}}</td>
+            <td class="chars-roller-score">{{value}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+        <tfoot>
+          <tr class="chars-roller-total-row">
+            <td><strong>{{totalLabel}}</strong></td>
+            <td class="chars-roller-score"><strong>{{total2}}</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="chars-roller-suggestion">
+        <i class="fas fa-hat-wizard"></i>
+        <em>{{suggestion2Text}}</em>
+      </div>
+    </div>
+
+  </div>{{!-- .chars-roller-sets --}}
+</div>{{!-- .chars-roller-dialog --}}
